@@ -78,6 +78,6 @@ class CGAN():
 if __name__ == '__main__':
 	generator = net.G_mlp()
 	discriminator = net.D_mlp()
-	data_set_file = "/Users/apple/Documents/UniMelbourne/my papers/GAN/dataset/Z.csv"
+	data_set_file = "../dataset/Z.csv"
 	cgan = CGAN(generator, discriminator, data_set_file, 20)
 	cgan.train()

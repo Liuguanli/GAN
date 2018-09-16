@@ -82,6 +82,6 @@ class info_GAN():
 if __name__ == '__main__':
 	generator = net.G_mlp()
 	discriminator = net.D_mlp_info()
-	data_set_file = "/Users/apple/Documents/UniMelbourne/my papers/GAN/dataset/Z.csv"
+	data_set_file = "../dataset/Z.csv"
 	info_gan = info_GAN(generator, discriminator, data_set_file, 20)
 	info_gan.train()

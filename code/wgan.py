@@ -87,6 +87,6 @@ class WGAN():
 if __name__ == '__main__':
 	generator = net.G_mlp_w()
 	discriminator = net.D_mlp_w()
-	data_set_file = "/Users/apple/Documents/UniMelbourne/my papers/GAN/dataset/Z.csv"
+	data_set_file = "../dataset/Z.csv"
 	wgan = WGAN(generator, discriminator, data_set_file)
 	wgan.train()
